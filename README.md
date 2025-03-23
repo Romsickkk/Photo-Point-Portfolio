@@ -1,54 +1,49 @@
-# React + TypeScript + Vite
+# 🛍️ Каталог товаров — Тестовое задание (Frontend Developer)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Описание проекта
 
-Currently, two official plugins are available:
+Приложение "Каталог товаров" позволяет пользователю:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Просматривать список товаров из API [Fake Store API](https://fakestoreapi.com/)
+- Искать и фильтровать товары по названию
+- Добавлять и удалять товары из корзины
+- Просматривать корзину с общей суммой
 
-## Expanding the ESLint configuration
+Проект реализован с использованием:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- React + TypeScript
+- React Router
+- Context API для управления состоянием корзины
+- Tailwind CSS для стилизации
+- React.lazy + Suspense для ленивой загрузки страниц
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+##  Технологии
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- React 18
+- TypeScript
+- Context API
+- Tailwind CSS
+- React Router v6
+- React.lazy + Suspense
+- Vite
+- ESLint + Prettier
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+---
+
+##  Установка и запуск
+
+### 1. Клонируй репозиторий
+
+```bash
+git clone https://github.com/твой-логин/catalog-app.git
+cd catalog-app
+
+Установка зависимости
+npm install
+
+Запуск проекта локально
+npm run dev
+
+Готово!
