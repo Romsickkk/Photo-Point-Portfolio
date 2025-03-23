@@ -36,7 +36,7 @@
 
 
 
-```bash
+Клонирования из GitHub
 git clone https://github.com/твой-логин/catalog-app.git
 cd catalog-app
 
